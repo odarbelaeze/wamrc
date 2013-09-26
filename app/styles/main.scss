@@ -122,9 +122,9 @@ footer {
 }
 
 footer .container {
-    text-align: center;
+    text-align: right;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .content {
@@ -161,4 +161,31 @@ li {
 .author {
     color: $grayLighter;
     text-shadow: 1px 1px 1px $gray;
+}
+
+#organizers,
+#sponsors {
+    padding-left: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#organizers h2,
+#sponsors h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: left;
+    color: $white;
+}
+
+#organizers a img,
+#sponsors a img {
+    height: 64px;
+    margin: 10px;
+}
+
+@media (min-width: 767px) {
+    #sponsors {
+        border-left: 1px solid $white;
+    }
 }
